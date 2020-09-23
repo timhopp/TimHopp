@@ -1,12 +1,7 @@
 <!DOCTYPE html>
-<!--
-	Overflow by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
   <head>
-    <title>Overflow by HTML5 UP</title>
+    <title>Tim Hopp</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -16,6 +11,10 @@
     <script src="js/jquery.poptrox.min.js"></script>
     <script src="js/skel.min.js"></script>
     <script src="js/init.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -30,6 +29,16 @@
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar justify-content-center" id="sticky">
+      <ul>
+        <li><a href="#header" id="links" class="m-5">Header</a></li>
+        <li><a href="#banner" id="links" class="m-5">About Me</a></li>
+        <li><a href="#first" id="links" class="m-5">My Work</a></li>
+        <li><a href="#skills" id="links" class="m-5">Skills</a></li>
+        <li><a href="#footer" id="links" class="m-5">Contact</a></li>
+      </ul>
+    </nav>
     <!-- Header -->
     <section id="header">
       <header>
@@ -65,56 +74,109 @@
         <a href="#first" class="button style2 scrolly">My Work</a>
       </footer>
     </section>
+    <section>
+      <!-- Feature 1 -->
+      <article id="first" class="container box style1 right">
+        <a href="https://songscoop.herokuapp.com/#/" class="image fit"
+          ><img src="images/songscoop.PNG" alt=""
+        /></a>
+        <div class="inner">
+          <header>
+            <h2>Song Scoop<br /></h2>
+          </header>
+          <p>
+            A mobile focused music playlist app powered by Spotify's API that
+            allows a host to invite friends to a session and have everyone
+            contribute to the playlist via their own devices.
+          </p>
+          <p>Created with Vue.js, Node.js, Mongoose, MongoDB, and Express.</p>
+        </div>
+      </article>
 
-    <!-- Feature 1 -->
-    <article id="first" class="container box style1 right">
-      <a href="https://songscoop.herokuapp.com/#/" class="image fit"
-        ><img src="images/songscoop.PNG" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>Song Scoop<br /></h2>
-        </header>
-        <p>
-          A mobile focused music playlist app powered by Spotify's API that
-          allows a host to invite friends to a session and have everyone
-          contribute to the playlist via their own devices.
-        </p>
-        <p>Created with Vue.js, Node.js, Mongoose, MongoDB, and Express.</p>
-      </div>
-    </article>
+      <!-- Feature 2 -->
+      <article class="container box style1 left">
+        <a href="https://keeprfinal.herokuapp.com/#/" class="image fit"
+          ><img src="images/keeprwider.PNG" alt=""
+        /></a>
+        <div class="inner">
+          <header>
+            <h2>Keepr</h2>
+          </header>
+          <p>A Pinterest inspired social media app.</p>
+          <p>Created with Vue.js, Dotnet/C#, GearDB, and Docker.</p>
+        </div>
+      </article>
 
-    <!-- Feature 2 -->
-    <article class="container box style1 left">
-      <a href="https://keeprfinal.herokuapp.com/#/" class="image fit"
-        ><img src="images/keeprwider.PNG" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>Keepr</h2>
-        </header>
-        <p>A Pinterest inspired social media app.</p>
-        <p>Created with Vue.js, Dotnet/C#, GearDB, and Docker.</p>
-      </div>
-    </article>
+      <!-- Feature 3 -->
+      <article id="third" class="container box style1 right finalfeature">
+        <a
+          href="https://kanban-de-bankan.herokuapp.com/#/"
+          class="image fit width-100"
+          ><img src="images/Kanban.PNG" alt=""
+        /></a>
+        <div class="inner">
+          <header>
+            <h2>KanBan<br /></h2>
+          </header>
+          <p>
+            A kanban board where the combination of boards, lists, tasks, and
+            comments provides solid understanding of data relationships.
+          </p>
+          <p>Created with Vue.js, Node.js, Mongoose, MongoDB, and Express.</p>
+        </div>
+      </article>
+      <footer class="container">
+        <div class="row justify-content-center">
+          <a
+            href="#skills"
+            class="button skillbtn style2 scrolly scrolly-center finalwork"
+            >Skills</a
+          >
+        </div>
+      </footer>
+    </section>
 
-    <!-- Feature 3 -->
-    <article id="third" class="container box style1 right">
-      <a
-        href="https://kanban-de-bankan.herokuapp.com/#/"
-        class="image fit width-100"
-        ><img src="images/Kanban.PNG" alt=""
-      /></a>
-      <div class="inner">
-        <header>
-          <h2>KanBan<br /></h2>
-        </header>
-        <p>
-          A kanban board where the combination of boards, lists, tasks, and
-          comments provides solid understanding of data relationships.
-        </p>
-        <p>Created with Vue.js, Node.js, Mongoose, MongoDB, and Express.</p>
-      </div>
+    <!-- Skills -->
+    <article class="style1 skills" id="skills">
+      <h3>Skills</h3>
+      <ul class="icons">
+        <li>
+          <h1><i class="devicon-bootstrap-plain-wordmark m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-css3-plain m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-dot-net-plain-wordmark m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-express-original m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-git-plain m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-github-plain m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-heroku-original m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-html5-plain-wordmark m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-javascript-plain m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-mongodb-plain-wordmark m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-nodejs-plain-wordmark m-3"></i></h1>
+        </li>
+        <li>
+          <h1><i class="devicon-csharp-plain m-3"></i></h1>
+        </li>
+      </ul>
     </article>
 
     <!-- Portfolio

@@ -2,15 +2,13 @@
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 @import url("font-awesome.min.css");
 
-/*
-	Overflow by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #183026;
@@ -103,11 +101,23 @@ a {
   -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
   transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
   text-decoration: none;
-  border-bottom: dotted 1px rgba(53, 184, 143, 0.5);
 }
 
-a:hover {
-  border-bottom-color: rgba(53, 184, 143, 0);
+#links {
+  color: #35b88f;
+  text-decoration: none;
+  background-image: linear-gradient(#dce4e0, #dce4e0),
+    linear-gradient(rgba(192, 192, 192, 0), rgba(192, 192, 192, 0));
+  background-size: 0 2px, auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: all 0.2s ease-out;
+}
+
+#links:hover {
+  color: #dce4e0;
+  transition: 0.5s;
+  background-size: 100% 1px, auto;
 }
 
 sub {
@@ -996,4 +1006,98 @@ input[type="reset"].style3:hover,
 .circle {
   border-radius: 50%;
   max-height: 200px;
+}
+
+#sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.596);
+  width: 100%;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.current {
+  color: #dce4e0 !important;
+}
+
+.skills {
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 0;
+}
+
+.skills:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -5em;
+  left: 50%;
+  height: 5em;
+  border-left: solid 1px #fff;
+}
+
+/* .skills:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 66px;
+  position: absolute;
+  left: 50%;
+  top: -4.5em;
+  margin-left: -45px;
+  margin-top: -33px;
+  background: url("images/arrow.svg") no-repeat;
+} */
+
+.skills-center {
+  text-align: center;
+}
+
+.icons ul li {
+  display: inline-block;
+}
+
+.skillbtn {
+  position: relative;
+  margin-top: 9em;
+  margin-bottom: 0;
+}
+
+.finalwork {
+  position: relative;
+  margin-bottom: 20;
+}
+
+.finalwork:before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top: -3.5em;
+  margin-left: -45px;
+  margin-top: -33px;
+  background: url("images/arrow.svg") no-repeat;
+}
+
+.finalwork:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8em;
+  left: 50%;
+  height: 9em;
+  border-left: solid 1px #fff;
 }
