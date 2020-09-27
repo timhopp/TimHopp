@@ -315,3 +315,20 @@
     });
   });
 })(jQuery);
+
+const Swal = require("sweetalert2");
+
+function copyEmail() {
+  let myEmail = "timothyjhopp@gmail.com";
+  navigator.clipboard.writeText(myEmail);
+
+  alert("Email Address Copied");
+
+  // Swal.fire({
+  //   position: "top-end",
+  //   title: "<span class='text-info'>Email Address Has Been Copied</span>",
+  //   showConfirmButton: false,
+  //   timer: 1500,
+  //   background: "#f66599",
+  // });
+}
