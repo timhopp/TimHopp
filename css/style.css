@@ -1101,3 +1101,43 @@ input[type="reset"].style3:hover,
   height: 9em;
   border-left: solid 1px #fff;
 }
+@media (max-width: 767px) {
+  .mobile {
+    background-color: rgba(0, 0, 0, 0.288);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    z-index: -1;
+    color: white;
+  }
+  #footer .mobilecolor {
+    color: black !important;
+  }
+  .techskills:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    height: 5em;
+    border-left: solid 1px black;
+  }
+}
+
+@media (min-width: 768px) {
+  .techskills {
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 5em;
+    margin-bottom: 0;
+  }
+  .techskills:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5em;
+    left: 50%;
+    height: 5em;
+    border-left: solid 1px #fff;
+  }
+}
