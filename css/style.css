@@ -1104,8 +1104,7 @@ input[type="reset"].style3:hover,
 @media (max-width: 767px) {
   .mobile {
     background-color: rgba(0, 0, 0, 0.288);
-    padding-top: 15px;
-    padding-bottom: 15px;
+
     z-index: -1;
     color: white;
   }
@@ -1121,9 +1120,15 @@ input[type="reset"].style3:hover,
     height: 5em;
     border-left: solid 1px black;
   }
+  .mobile-hide {
+    color: white;
+  }
 }
 
 @media (min-width: 768px) {
+  .mobile-hide {
+    display: none;
+  }
   .techskills {
     color: white;
     text-align: center;
@@ -1140,4 +1145,16 @@ input[type="reset"].style3:hover,
     height: 5em;
     border-left: solid 1px #fff;
   }
+}
+/ @media (max-width: 800px) {
+  #container {
+    padding: -2em;
+    margin: 0;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
